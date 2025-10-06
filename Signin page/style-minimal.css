@@ -1,20 +1,17 @@
-
+/* Minimal CSS for signin form */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body{
+body {
     background-color: #fef8de;
-    margin: 0;
-    padding: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.body-container{
+.body-container {
     position: relative;
-    /* border: 1px solid black; */
     border-radius: 20px;
     height: 590px;
     padding: 20px;
@@ -29,7 +26,6 @@ body{
     display: block;
 }
 
-/* Form Overlay - Positioned on top of image */
 .form-overlay {
     position: absolute;
     top: 0;
@@ -68,21 +64,11 @@ body{
     box-shadow: 0 4px 8px rgba(255, 202, 176, 0.3);
 }
 
-.form-section h1 {
+h1 {
     font-size: 20px;
     font-weight: 300;
-    color: #333;
     margin-bottom: 5px;
-}
-
-.form-section p {
-    color: #666;
-    font-size: 11px;
-    margin-bottom: 16px;
-}
-
-.input-group {
-    margin-bottom: 12px;
+    color: #333;
 }
 
 .name-row {
@@ -91,20 +77,23 @@ body{
     margin-bottom: 12px;
 }
 
-.half-width {
-    flex: 1;
-    margin-bottom: 0;
+.input-group {
+    margin-bottom: 12px;
 }
 
-.input-group label {
+.half-width {
+    flex: 1;
+}
+
+label {
     display: block;
-    color: #555;
     font-size: 10px;
     margin-bottom: 3px;
+    color: #555;
     font-weight: 500;
 }
 
-.input-group input {
+input {
     width: 100%;
     padding: 8px 10px;
     border: 1px solid #e0e0e0;
@@ -114,11 +103,24 @@ body{
     transition: all 0.3s ease;
 }
 
-.input-group input:focus {
+input:focus {
     outline: none;
     border-color: #FF9A6B;
     background: white;
     box-shadow: 0 0 0 2px rgba(255, 154, 107, 0.1);
+}
+
+input.error {
+    border-color: #e74c3c;
+    background-color: #fdf2f2;
+}
+
+.error-message {
+    color: #e74c3c;
+    font-size: 9px;
+    margin-top: 3px;
+    font-weight: 500;
+    display: block;
 }
 
 .submit-btn {
@@ -160,11 +162,6 @@ body{
     transition: all 0.3s ease;
 }
 
-.apple-btn:hover, .google-btn:hover {
-    background: #f8f9fa;
-    border-color: #ccc;
-}
-
 .footer-text {
     display: flex;
     justify-content: space-between;
@@ -173,14 +170,10 @@ body{
 }
 
 .footer-text a {
-    color: #FF9A6B;
+    color: #ff6b35;
     text-decoration: none;
 }
 
-.footer-text a:hover {
-    text-decoration: underline;
-}
-
-.content-wrapper{
-    margin: 20px 20px 20px 20px;
+.content-wrapper {
+    margin: 20px;
 }

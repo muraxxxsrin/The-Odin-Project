@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In - Crextio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style-minimal.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="body-container content-wrapper">
@@ -15,41 +16,41 @@
                 <div class="logo">Any name</div>
                 <div class="form-section">
                     <h1>Create an account</h1>
-                    <!-- <p>Sign up and get 30 day free trial</p> -->
+                    
                     
                     <form>
                         <div class="name-row">
                             <div class="input-group half-width">
-                                <label>First name</label>
-                                <input type="text" placeholder="First name">
+                                <label>First name*</label>
+                                <input type="text" placeholder="First name" required>
                             </div>
                             <div class="input-group half-width">
-                                <label>Last name</label>
-                                <input type="text" placeholder="Last name">
+                                <label>Last name*</label>
+                                <input type="text" placeholder="Last name" required>
                             </div>
                         </div>
                         
                         <div class="input-group">
-                            <label>Email</label>
-                            <input type="email" placeholder="Email">
+                            <label>Email*</label>
+                            <input type="email" placeholder="Email" required>
                         </div>
                         
                         <div class="input-group">
-                            <label>Phone number</label>
-                            <input type="tel" placeholder="+91 0123456789">
+                            <label>Phone number*</label>
+                            <input type="tel" placeholder="+91 0123456789" required>
                         </div>
                         
                         <div class="input-group">
-                            <label>Password</label>
-                            <input type="password" placeholder="••••••••••••••••">
+                            <label>Password*</label>
+                            <input type="password" placeholder="Password" required>
                         </div>
                         
                         <div class="input-group">
-                            <label>Confirm password</label>
-                            <input type="password" placeholder="••••••••••••••••">
+                            <label>Confirm password*</label>
+                            <input type="password" placeholder="Confirm password" required>
                         </div>
                         
-                        <button class="submit-btn">Submit</button>
+                        <button type="submit" class="submit-btn">Create Account</button>
                         
                         <div class="social-login">
                             <button class="apple-btn">Apple</button>
